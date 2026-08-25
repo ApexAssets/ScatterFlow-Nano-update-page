@@ -1451,81 +1451,6 @@
       }
     }
 
-
-    .compat-compare {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-      gap: 16px;
-      align-items: center;
-      margin: 20px 0 14px;
-    }
-
-    .compat-preview {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .compat-preview .img-container {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      margin: 0;
-      border-radius: 10px;
-      background: #0b0b0d;
-    }
-
-    .compat-preview img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .compat-label {
-      text-align: center;
-      font-size: 0.76rem;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #e4e4e7;
-    }
-
-    .compat-arrow {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 56px;
-      height: 56px;
-      border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.03) 100%);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.06), 0 10px 22px rgba(0,0,0,0.28);
-      backdrop-filter: blur(10px);
-      flex-shrink: 0;
-    }
-
-    .compat-convert-icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 30px;
-      height: 30px;
-      color: #ffffff;
-      font-size: 1.35rem;
-      font-weight: 600;
-      line-height: 1;
-      letter-spacing: -0.08em;
-      transform: translateY(-1px);
-    }
-
-    .compat-caption {
-      text-align: center;
-      font-size: 0.88rem;
-      line-height: 1.5;
-      color: #a1a1aa;
-      margin: 0 0 16px 0;
-    }
-
     @media (max-width: 768px) {
       .bento-grid,
       .bento-grid.two-col {
@@ -1556,19 +1481,6 @@
     }
 
     @media (max-width: 650px) {
-
-
-      .compat-compare {
-        grid-template-columns: 1fr;
-        gap: 12px;
-      }
-
-      .compat-arrow {
-        margin: 0 auto;
-        width: 52px;
-        height: 52px;
-        transform: none;
-      }
 
       .sale-banner {
         padding: 16px 10px 0 10px;
@@ -1863,38 +1775,6 @@
           </div>
           <h3>One-Click Workflow</h3>
           <p>No complex setup or trying to match individual assets by hand. Simply select your biome, click your target mesh, and let ScatterFlow build the base for you</p>
-        </div>
-      </div>
-
-      <div class="grid-2" style="align-items: stretch; margin-top: 0;">
-        <div class="feature-card col-span-2">
-          <div class="feature-title-row" style="justify-content: flex-start;">
-            <h3>Geo-Scatter Compatibility</h3>
-            <span class="badge beta">Experimental</span>
-          </div>
-          <p>Your Geo-Scatter biome library doesn’t have to stay behind — bring it into ScatterFlow Pro and keep using the assets you already love.</p>
-
-          <div class="compat-compare">
-            <div class="compat-preview">
-              <div class="img-container">
-                <img src="./assets\geoscatter version.jpg" alt="Geo-Scatter biome preview" loading="lazy">
-              </div>
-              <div class="compat-label">Geo-Scatter</div>
-            </div>
-
-            <div class="compat-arrow" aria-hidden="true">
-              <span class="compat-convert-icon">→</span>
-            </div>
-
-            <div class="compat-preview">
-              <div class="img-container">
-                <img src="./assets\ScatterFlow Versionr version.jpg" alt="ScatterFlow biome preview" loading="lazy">
-              </div>
-              <div class="compat-label">ScatterFlow Pro</div>
-            </div>
-          </div>
-
-          <p style="margin-top: 12px; font-size: 0.82rem; color: #71717a; flex-grow: 0;"><strong style="color: #a1a1aa; font-weight: 600;">Note:</strong> Converted Geo-Scatter biomes may not be an exact 1:1 match and may need some additional tweaking.</p>
         </div>
       </div>
     </div>
